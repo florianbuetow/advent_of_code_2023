@@ -1,5 +1,6 @@
 import os
 import json
+from readline import get_endidx
 
 
 class MarkdownGenerator:
@@ -53,25 +54,23 @@ class MarkdownGenerator:
         day_zerofill = str(day).zfill(2)
         return f"solutions/{day_zerofill}_{challenge_slug}.py"
 
-    def get_space_complexity(self, day: int) -> str:
-        filename = self.get_path_to_local_solution_filename(day)
-        # open the file and search for the first occurrence of "Space complexity: ..."
+    def get_end_of_line_starting_with(self, filename: str, startswith: str, default:str) -> str:
         with open(filename, "r") as f:
             for line in f:
                 line = line.strip()
-                if line.startswith("Space complexity:"):
-                    return line[len("Space complexity:"):].strip()
-        return "O(...)"
+                while line.startswith("#"): # remove leading comment indicators
+                    line = line[1:].strip()
+                if line.lower().startswith(startswith.lower()):
+                    return line[len(startswith):].strip()
+        return default
+
+    def get_space_complexity(self, day: int) -> str:
+        filename = self.get_path_to_local_solution_filename(day)
+        return self.get_end_of_line_starting_with(filename, "Space complexity: ", "O(...)")
 
     def get_time_complexity(self, day: int) -> str:
         filename = self.get_path_to_local_solution_filename(day)
-        # open the file and search for the first occurrence of "Space complexity: ..."
-        with open(filename, "r") as f:
-            for line in f:
-                line = line.strip()
-                if line.startswith("Time complexity:"):
-                    return line[len("Time complexity:"):].strip()
-        return "O(...)"
+        return self.get_end_of_line_starting_with(filename, "Time complexity: ", "O(...)")
 
     def has_been_solved(self, day: int) -> bool:
         def contains_python_code(filename: str) -> bool:

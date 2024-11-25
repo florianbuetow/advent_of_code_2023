@@ -4,9 +4,9 @@ In December 2024, I joined [Jeremy Howard's](https://jeremy.fast.ai) new course,
 
 This repository contains my solutions to the Advent of Code 2023 challenges, crafted using the dialogue engineering process taught in the course. Beyond the solutions, it also includes the dialogue logs detailing how each solution was developed. These logs showcase the iterative journey of problem-solving, offering insights into the reasoning and techniques behind the final results.
 
-I encourage you to explore both the solutions and the accompanying dialogues. Together, they highlight not just the results but also the process and the power of this new coding approach.
+I encourage you to explore both the solutions and the accompanying dialogues listed in the challenges table below. Together, they highlight not just the results but also the process and the power of this new coding approach.
 
-__Note:__ The input data for each challenge differ by user. If you are using this project as a template for your own solutions, you will need to log in to the [Advent of Code](https://adventofcode.com) website to get your personal puzzle input and replace the existing data in the `data` folder with it.
+__Note:__ The input data for each challenge differ by user. If you are using this project as a template for your own solutions, you will need to log in to the [Advent of Code](https://adventofcode.com) website to download your personal puzzle input data and use it to replace the existing files in the [./data/](./data/) folder. To update the [table of challenges](#table-of-challenges), read these [instructions](#generating-this-readme) below.
 
 ## Table of Challenges
 
@@ -36,7 +36,27 @@ __Note:__ The input data for each challenge differ by user. If you are using thi
 ---
 ## Generating this README
 
-The following outlines the steps to build and run the Docker container that generates the `README.md` file using the `generate_readme.py` script.
+Generating the `README.md` file updates the cells of the challenges table based on the metadata from the `challenges.json` file the content (!) of the solution files automatically.
+
+__Note:__ The time and space complexity are extracted from the solution files by looking for lines that start with `Time complexity:` and `Space complexity:` respectively. Please ensure that these lines are present in your solution files as well. Here are some valid examples:
+```python
+"""
+...
+Time complexity: O(...)
+Space complexity: O(...)
+...
+"""
+```
+or
+```python
+...
+# Time complexity: O(...)
+...
+# Space complexity: O(...)
+...
+```
+
+To generate the `README.md` file, follow these steps:
 
 #### 0. Prerequisites
 
