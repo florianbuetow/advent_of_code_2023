@@ -6,8 +6,11 @@ This repository contains my solutions to the Advent of Code 2023 challenges, cra
 
 I encourage you to explore both the solutions and the accompanying dialogues. Together, they highlight not just the results but also the process and the power of this new coding approach.
 
-## Project Structure
+## Table of Challenges
 
+<!-- INSERT CHALLENGE TABLE HERE -->
+
+## Repository Structure
 
 ```bash
 .
@@ -28,10 +31,6 @@ I encourage you to explore both the solutions and the accompanying dialogues. To
 └── solutions                       <- Contains Python solution scripts for each challenge
     └── *.py                        <- Python scripts for solving individual challenges
 ```
-## Challenges
-
-<!-- INSERT CHALLENGE TABLE HERE -->
-
 ---
 ## Generating this README
 
@@ -56,8 +55,8 @@ chmod +x ./generate_readme_using_docker.sh
 ./generate_readme_using_docker.sh
 ```
 
-- This will build the Docker image every time it is run (to avoid caching)
-- It will then run the Docker container to execute the `generate_readme.py` script, which generates the `README.md` file and persists it to your local directory.
+- This will build the Docker image each time it is run to avoid file caching issues.
+- It will then run the Docker container to execute the `generate_readme.py` script, which generates the `README.md` file and overwrites the exiting `README.md` file in your local directory.
 
 #### 3. Verify the Output
 

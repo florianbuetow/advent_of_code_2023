@@ -6,29 +6,7 @@ This repository contains my solutions to the Advent of Code 2023 challenges, cra
 
 I encourage you to explore both the solutions and the accompanying dialogues. Together, they highlight not just the results but also the process and the power of this new coding approach.
 
-## Project Structure
-
-
-```bash
-.
-├── Dockerfile                      <- Defines the environment for generating the README in Docker
-├── README.md                       <- You are reading this right now
-├── README.template                 <- Template for dynamically generating the README file
-├── challenges.json                 <- Metadata about Advent of Code 2023 challenges
-├── generate_file_templates.py      <- Script to create consistent file templates for challenges
-├── generate_readme.py              <- Script to generate the README dynamically
-├── generate_readme_using_docker.sh <- Runs generate_readme.py inside a Docker container
-├── requirements.txt                <- Lists the Python dependencies for the project
-├── data                            <- Contains input and sample data for challenges
-│   ├── dayXX.txt                   <- Main input data for each challenge
-│   ├── dayXX_sample.txt            <- Sample input data for testing
-│   └── dayXX_test.txt              <- Additional test data (optional)
-├── dialogues                       <- Dialogue logs showcasing problem-solving steps
-│   └── *.md                        <- Markdown files documenting the solution process for each challenge
-└── solutions                       <- Contains Python solution scripts for each challenge
-    └── *.py                        <- Python scripts for solving individual challenges
-```
-## Challenges
+## Table of Challenges
 
 | Day | Challenge                       | Solution Code | Solution Dialog | Time Complexity | Space Complexity | Challenge Link |
 |-----|---------------------------------|---------------|-----------------|-----------------|------------------|----------------------------------------------------------|
@@ -58,6 +36,27 @@ I encourage you to explore both the solutions and the accompanying dialogues. To
 | 24  | Never Tell Me The Odds          | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/24) |
 | 25  | Snowverload                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/25) |
 
+## Repository Structure
+
+```bash
+.
+├── Dockerfile                      <- Defines the environment for generating the README in Docker
+├── README.md                       <- You are reading this right now
+├── README.template                 <- Template for dynamically generating the README file
+├── challenges.json                 <- Metadata about Advent of Code 2023 challenges
+├── generate_file_templates.py      <- Script to create consistent file templates for challenges
+├── generate_readme.py              <- Script to generate the README dynamically
+├── generate_readme_using_docker.sh <- Runs generate_readme.py inside a Docker container
+├── requirements.txt                <- Lists the Python dependencies for the project
+├── data                            <- Contains input and sample data for challenges
+│   ├── dayXX.txt                   <- Main input data for each challenge
+│   ├── dayXX_sample.txt            <- Sample input data for testing
+│   └── dayXX_test.txt              <- Additional test data (optional)
+├── dialogues                       <- Dialogue logs showcasing problem-solving steps
+│   └── *.md                        <- Markdown files documenting the solution process for each challenge
+└── solutions                       <- Contains Python solution scripts for each challenge
+    └── *.py                        <- Python scripts for solving individual challenges
+```
 ---
 ## Generating this README
 
@@ -82,8 +81,8 @@ chmod +x ./generate_readme_using_docker.sh
 ./generate_readme_using_docker.sh
 ```
 
-- This will build the Docker image every time it is run (to avoid caching)
-- It will then run the Docker container to execute the `generate_readme.py` script, which generates the `README.md` file and persists it to your local directory.
+- This will build the Docker image each time it is run to avoid file caching issues.
+- It will then run the Docker container to execute the `generate_readme.py` script, which generates the `README.md` file and overwrites the exiting `README.md` file in your local directory.
 
 #### 3. Verify the Output
 
