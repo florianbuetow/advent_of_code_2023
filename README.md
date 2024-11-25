@@ -32,15 +32,15 @@ I encourage you to explore both the solutions and the accompanying dialogues. To
 
 | Day | Challenge                       | Solution Code | Solution Dialog | Time Complexity | Space Complexity | Challenge Link |
 |-----|---------------------------------|---------------|-----------------|-----------------|------------------|----------------------------------------------------------|
-| 01  | Trebuchet?!                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/1) |
-| 02  | Cube Conundrum                  | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/2) |
-| 03  | Gear Ratios                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/3) |
-| 04  | Scratchcards                    | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/4) |
-| 05  | If You Give A Seed A Fertilizer | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/5) |
-| 06  | Wait For It                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/6) |
-| 07  | Camel Cards                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/7) |
-| 08  | Haunted Wasteland               | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/8) |
-| 09  | Mirage Maintenance              | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/9) |
+| 1   | Trebuchet?!                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/1) |
+| 2   | Cube Conundrum                  | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/2) |
+| 3   | Gear Ratios                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/3) |
+| 4   | Scratchcards                    | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/4) |
+| 5   | If You Give A Seed A Fertilizer | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/5) |
+| 6   | Wait For It                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/6) |
+| 7   | Camel Cards                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/7) |
+| 8   | Haunted Wasteland               | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/8) |
+| 9   | Mirage Maintenance              | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/9) |
 | 10  | Pipe Maze                       | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/10) |
 | 11  | Cosmic Expansion                | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/11) |
 | 12  | Hot Springs                     | Unsolved      | -               | -               | -                | [adventofcode.com](https://adventofcode.com/2023/day/12) |

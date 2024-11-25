@@ -129,7 +129,7 @@ class MarkdownGenerator:
                 dialogue_link = "-"
                 time_complexity = "-"
                 space_complexity = "-"
-            return f"{day_zerofill} | {challenge_title} | {solution_link} | {dialogue_link} | {time_complexity} | {space_complexity} | [adventofcode.com]({challenge_link})"
+            return f"{day} | {challenge_title} | {solution_link} | {dialogue_link} | {time_complexity} | {space_complexity} | [adventofcode.com]({challenge_link})"
 
         def format_markdown_table(table: list[str]) -> list[str]:
             # Find the maximum width of each column
