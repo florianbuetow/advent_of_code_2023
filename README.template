@@ -1,6 +1,6 @@
 # About
 
-In December 2024, I joined Jeremy Howard's new course, Solve It With Code, by fast.ai. This unique program introduces a fresh approach to coding that combines iterative problem-solving with AI. It emphasizes building foundational skills without requiring a background in data structures or computer science. The course focuses on using Python (with minimal external libraries) and teaches a dialogue engineering technique that integrates AI as a collaborative tool.
+In December 2024, I joined [Jeremy Howard's](https://jeremy.fast.ai) new course, [Solve It With Code](https://solveit.fast.ai), by [fast.ai](https://www.fast.ai). This unique program introduces a fresh approach to coding that combines iterative problem-solving with AI. It emphasizes building foundational skills without requiring a background in data structures or computer science. The course focuses on using Python (with minimal external libraries) and teaches a dialogue engineering technique that integrates AI as a collaborative tool ([source](https://solveit.fast.ai/course-details)).
 
 This repository contains my solutions to the Advent of Code 2023 challenges, crafted using the dialogue engineering process taught in the course. Beyond the solutions, it also includes the dialogue logs detailing how each solution was developed. These logs showcase the iterative journey of problem-solving, offering insights into the reasoning and techniques behind the final results.
 
